@@ -1,4 +1,4 @@
 package com.assignment.tictactoe.service;
 
-public class Board {
+public interface Board {
 }
