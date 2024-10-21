@@ -10,9 +10,9 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="gamePage" prefHeight="800.0" prefWidth="600.0" style="-fx-background-color: #81ecec;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.assignment.tictactoe.service.controller.GamePageController">
+<AnchorPane fx:id="gamePage" prefHeight="900.0" prefWidth="600.0" style="-fx-background-color: #81ecec;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.assignment.tictactoe.service.controller.GamePageController">
    <children>
-      <GridPane fx:id="gridPane" layoutX="20.0" layoutY="129.0" prefHeight="570.0" prefWidth="560.0" style="-fx-background-color: black;">
+      <GridPane fx:id="gridPane" layoutX="19.0" layoutY="98.0" prefHeight="570.0" prefWidth="560.0" style="-fx-background-color: black;">
         <columnConstraints>
           <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="203.0" minWidth="10.0" prefWidth="193.0" />
           <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="189.0" minWidth="10.0" prefWidth="174.0" />
@@ -27,47 +27,47 @@
             <Cursor fx:constant="DEFAULT" />
          </cursor>
          <children>
-            <Button fx:id="btn1" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="183.0" prefWidth="183.0" style="-fx-background-color: #dfe4ea; -fx-background-radius: 10;">
+            <Button fx:id="btn1" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onMouseClicked="#handleCellClick" prefHeight="183.0" prefWidth="183.0" style="-fx-background-color: #dfe4ea; -fx-background-radius: 10;" GridPane.columnIndex="0" GridPane.rowIndex="0">
                <font>
                   <Font size="50.0" />
                </font></Button>
-            <Button fx:id="btn3" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="183.0" prefWidth="183.0" style="-fx-background-color: #dfe4ea; -fx-background-radius: 10;" GridPane.columnIndex="2">
+            <Button fx:id="btn3" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onMouseClicked="#handleCellClick" prefHeight="183.0" prefWidth="183.0" style="-fx-background-color: #dfe4ea; -fx-background-radius: 10;" GridPane.columnIndex="1" GridPane.rowIndex="0">
                <font>
                   <Font size="50.0" />
                </font></Button>
-            <Button fx:id="btn2" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="183.0" prefWidth="183.0" style="-fx-background-color: #dfe4ea; -fx-background-radius: 10;" GridPane.columnIndex="1">
+            <Button fx:id="btn2" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onMouseClicked="#handleCellClick" prefHeight="183.0" prefWidth="183.0" style="-fx-background-color: #dfe4ea; -fx-background-radius: 10;" GridPane.columnIndex="2" GridPane.rowIndex="0">
                <font>
                   <Font size="50.0" />
                </font></Button>
-            <Button fx:id="btn4" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="183.0" prefWidth="183.0" style="-fx-background-color: #dfe4ea; -fx-background-radius: 10;" textAlignment="CENTER" GridPane.rowIndex="1">
+            <Button fx:id="btn4" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onMouseClicked="#handleCellClick" prefHeight="183.0" prefWidth="183.0" style="-fx-background-color: #dfe4ea; -fx-background-radius: 10;" textAlignment="CENTER" GridPane.columnIndex="0" GridPane.rowIndex="1">
                <font>
                   <Font size="50.0" />
                </font></Button>
-            <Button fx:id="btn5" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="183.0" prefWidth="183.0" style="-fx-background-color: #dfe4ea; -fx-background-radius: 10;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <Button fx:id="btn5" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onMouseClicked="#handleCellClick" prefHeight="183.0" prefWidth="183.0" style="-fx-background-color: #dfe4ea; -fx-background-radius: 10;" GridPane.columnIndex="1" GridPane.rowIndex="1">
                <font>
                   <Font size="50.0" />
                </font></Button>
-            <Button fx:id="btn6" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="183.0" prefWidth="183.0" style="-fx-background-color: #dfe4ea; -fx-background-radius: 10;" GridPane.columnIndex="2" GridPane.rowIndex="1">
+            <Button fx:id="btn6" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onMouseClicked="#handleCellClick" prefHeight="183.0" prefWidth="183.0" style="-fx-background-color: #dfe4ea; -fx-background-radius: 10;" GridPane.columnIndex="2" GridPane.rowIndex="1">
                <font>
                   <Font size="50.0" />
                </font></Button>
-            <Button fx:id="btn7" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="183.0" prefWidth="183.0" style="-fx-background-color: #dfe4ea; -fx-background-radius: 10;" GridPane.rowIndex="2">
+            <Button fx:id="btn7" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onMouseClicked="#handleCellClick" prefHeight="183.0" prefWidth="183.0" style="-fx-background-color: #dfe4ea; -fx-background-radius: 10;" GridPane.columnIndex="0" GridPane.rowIndex="2">
                <font>
                   <Font size="50.0" />
                </font></Button>
-            <Button fx:id="btn8" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="183.0" prefWidth="183.0" style="-fx-background-color: #dfe4ea; -fx-background-radius: 10;" GridPane.columnIndex="1" GridPane.rowIndex="2">
+            <Button fx:id="btn8" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onMouseClicked="#handleCellClick" prefHeight="183.0" prefWidth="183.0" style="-fx-background-color: #dfe4ea; -fx-background-radius: 10;" GridPane.columnIndex="1" GridPane.rowIndex="2">
                <font>
                   <Font size="50.0" />
                </font></Button>
-            <Button fx:id="btn9" alignment="CENTER" mnemonicParsing="false" prefHeight="183.0" prefWidth="183.0" style="-fx-background-color: #dfe4ea; -fx-background-radius: 10;" GridPane.columnIndex="2" GridPane.rowIndex="2">
+            <Button fx:id="btn9" alignment="CENTER" mnemonicParsing="false" onMouseClicked="#handleCellClick" prefHeight="183.0" prefWidth="183.0" style="-fx-background-color: #dfe4ea; -fx-background-radius: 10;" GridPane.columnIndex="2" GridPane.rowIndex="2">
                <font>
                   <Font size="50.0" />
                </font></Button>
          </children>
       </GridPane>
-      <AnchorPane fx:id="headingPane" prefHeight="107.0" prefWidth="600.0" style="-fx-background-color: #70a1ff;">
+      <AnchorPane fx:id="headingPane" prefHeight="84.0" prefWidth="600.0" style="-fx-background-color: #70a1ff;">
          <children>
-            <Label fx:id="lblHeading" alignment="CENTER" layoutX="104.0" layoutY="17.0" prefHeight="79.0" prefWidth="356.0" text="Tic-Tac-Toe">
+            <Label fx:id="lblHeading" alignment="CENTER" layoutX="104.0" layoutY="6.0" prefHeight="65.0" prefWidth="356.0" text="Tic-Tac-Toe">
                <font>
                   <Font name="System Bold" size="52.0" />
                </font>
@@ -76,10 +76,30 @@
             <FontAwesomeIcon fx:id="iconMinimize" iconName="MINUS" layoutX="524.0" layoutY="31.0" size="2.5em" />
          </children>
       </AnchorPane>
-      <Button fx:id="btnRestart" alignment="CENTER" layoutX="154.0" layoutY="715.0" mnemonicParsing="false" onAction="#btnRestartOnAction" prefHeight="65.0" prefWidth="292.0" style="-fx-background-color: #3742fa; -fx-background-radius: 20;" text="Restart" textFill="WHITE">
+      <Button fx:id="btnRestart" alignment="CENTER" layoutX="154.0" layoutY="823.0" mnemonicParsing="false" onAction="#btnRestartOnAction" prefHeight="65.0" prefWidth="292.0" style="-fx-background-color: #3742fa; -fx-background-radius: 20;" text="Restart" textFill="WHITE">
          <font>
             <Font name="System Bold" size="26.0" />
          </font>
       </Button>
+      <Label fx:id="lblStatus" alignment="CENTER" layoutX="32.0" layoutY="682.0" prefHeight="65.0" prefWidth="269.0" style="-fx-background-color: #576574; -fx-background-radius: 10;" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblYourScore" alignment="CENTER" layoutX="312.0" layoutY="682.0" prefHeight="65.0" prefWidth="269.0" style="-fx-background-color: #576574; -fx-background-radius: 10;" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblAiScore" alignment="CENTER" layoutX="32.0" layoutY="752.0" prefHeight="65.0" prefWidth="269.0" style="-fx-background-color: #576574; -fx-background-radius: 10;" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTieCount" alignment="CENTER" layoutX="312.0" layoutY="752.0" prefHeight="65.0" prefWidth="269.0" style="-fx-background-color: #576574; -fx-background-radius: 10;" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>
