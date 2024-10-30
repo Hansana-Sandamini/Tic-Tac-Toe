@@ -30,7 +30,6 @@ public class BoardImpl implements Board {
         }
     }
 
-
     public Piece checkWinner() {
 
         for (int row = 0; row < 3; row++) {
@@ -63,7 +62,6 @@ public class BoardImpl implements Board {
                 }
             }
         }
-
         if (boardFull) {
             return null;
         }
@@ -72,7 +70,6 @@ public class BoardImpl implements Board {
         }
         return null;
     }
-
 
     public boolean isFull() {
         for(int i = 0; i < 3; i++) {
@@ -123,6 +120,7 @@ public class BoardImpl implements Board {
                 pieces[row][col] = null;
             }
         }
+        initializeBoard();
     }
 
 }

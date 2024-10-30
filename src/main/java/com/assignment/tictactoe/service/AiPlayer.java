@@ -33,7 +33,7 @@ public class AiPlayer extends Player {
             }
         }
         if(!availableMoves.isEmpty()) {
-            int[] move = availableMoves.get(random.nextInt(availableMoves.size()));
+            int[] move = availableMoves.get(findBestMove()[0]);
             board.updateMove(move[0], move[1], Piece.O);
         }
     }
